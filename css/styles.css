@@ -1,0 +1,668 @@
+/* GLOBAL STYLES*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: futuraBook;
+  src: url("../fonts/futura/Futura Book.ttf");
+}
+
+@font-face {
+  font-family: futuraBold;
+  src: url("../fonts/futura/FuturaStd Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: futuraItalic;
+  src: url("../fonts/futura/Futura Std Medium Oblique.ttf");
+}
+
+/*------------------------------------------------- */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #6db3b4;
+  color: #ffffff;
+  font-family: 'futuraBook';
+}
+
+body h1, body h2 {
+  font-family: 'FuturaBold', cursive;
+}
+
+/*.background-1{
+  background-image: url("../media/wheat-field-bg-2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  @include media-breakpoint-down(sm){
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    -moz-background-size:auto;
+    background-size: auto;
+  }
+}*/
+nav {
+  background: #6db3b4;
+  font-family: 'futuraBold';
+  z-index: 6;
+}
+
+nav #nav-logo {
+  width: auto;
+  height: 50px;
+}
+
+@media (max-width: 991.98px) {
+  nav #nav-logo {
+    height: 40px;
+  }
+}
+
+nav .navbar-toggler .navbar-toggler-icon {
+  color: #ffffff;
+}
+
+nav ul {
+  width: 80%;
+}
+
+header.lp {
+  position: relative;
+  height: 90vh;
+}
+
+@media (max-width: 991.98px) {
+  header.lp {
+    height: 500px;
+  }
+}
+
+header.lp li a {
+  color: #ffffff;
+}
+
+header #cereal-img {
+  position: absolute;
+  width: auto;
+  height: 85%;
+  bottom: 2rem;
+  right: 200px;
+  z-index: 3;
+}
+
+@media (max-width: 1199.98px) {
+  header #cereal-img {
+    right: 100px;
+    height: 66%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header #cereal-img {
+    right: 70px;
+    width: 60%;
+    height: auto;
+    top: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header #cereal-img {
+    right: 50px;
+    width: 80%;
+    height: auto;
+    top: 64%;
+    z-index: -1;
+  }
+}
+
+header #head-bumper {
+  position: relative;
+  width: 40%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 150px;
+}
+
+@media (max-width: 1199.98px) {
+  header #head-bumper {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header #head-bumper {
+    margin-top: 3rem;
+    padding-left: 70px;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header #head-bumper {
+    padding-left: 3rem;
+    padding-top: 6rem;
+    width: 100%;
+    -webkit-filter: drop-shadow(0px 10px 100px rgba(29, 29, 29, 0.4));
+            filter: drop-shadow(0px 10px 100px rgba(29, 29, 29, 0.4));
+  }
+}
+
+header #head-bumper h1 {
+  font-size: 7rem;
+  color: #DB1434;
+  line-height: 0.6;
+  margin-bottom: 2rem;
+}
+
+header #head-bumper h1 span {
+  margin-left: 3rem;
+  font-size: 6rem;
+}
+
+@media (max-width: 1199.98px) {
+  header #head-bumper h1 span {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header #head-bumper h1 span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  header #head-bumper h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header #head-bumper h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  header #head-bumper h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header #head-bumper h3 {
+    font-size: 1.25rem;
+  }
+}
+
+header #head-bumper #header-btn {
+  background-color: #DB1434;
+  color: #ffffff;
+  margin: 3rem auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 22px 35px;
+  font-size: 2rem;
+  font-family: 'futuraBold';
+  border-radius: 60px;
+  line-height: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 1199.98px) {
+  header #head-bumper #header-btn {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.75em;
+    margin: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header #head-bumper #header-btn {
+    font-size: 1.25em;
+    padding: 12px 20px;
+    bottom: 20%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header #head-bumper #header-btn {
+    bottom: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+header #head-bumper #header-btn:hover {
+  background-color: #ffffff;
+  color: #1D1D1D;
+  -webkit-box-shadow: 10px 10px 10px #1D1D1D;
+          box-shadow: 10px 10px 10px #1D1D1D;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header #head-bumper #header-btn:active {
+  background-color: #6db3b4;
+  color: #ffffff;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+header .muesli-logo {
+  position: absolute;
+  max-width: 35%;
+  left: 50%;
+  top: 50%;
+  -webkit-filter: drop-shadow(0px 0px 100px #1D1D1D);
+          filter: drop-shadow(0px 0px 100px #1D1D1D);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767.98px) {
+  header .muesli-logo {
+    max-width: 60%;
+    max-height: 55%;
+  }
+}
+
+header .arrow-down {
+  position: absolute;
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  max-width: 20%;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 99;
+}
+
+@media (max-width: 767.98px) {
+  header .arrow-down {
+    max-width: 30%;
+  }
+}
+
+header .arrow-down.scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.welcome {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #DB1434;
+}
+
+.welcome h2 {
+  margin-bottom: 2rem;
+}
+
+.welcome p {
+  font-size: 1.25rem;
+}
+
+#create-muesli {
+  margin: 100px 0;
+}
+
+#create-muesli .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#create-muesli .flex #mixed-bowel {
+  position: relative;
+  margin: 0 auto;
+}
+
+#create-muesli .flex #mixed-bowel img {
+  width: 100%;
+  height: auto;
+}
+
+#create-muesli .flex #mixed-bowel .custum-mix {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#create-muesli .flex #mixed-bowel .custum-mix.hide {
+  display: none;
+  opacity: 0;
+}
+
+#create-muesli .flex #mixed-bowel #bowl {
+  z-index: 1;
+}
+
+#create-muesli .flex #mixed-bowel #choc {
+  z-index: 3;
+}
+
+#create-muesli .flex #mixed-bowel #corn {
+  z-index: 2;
+}
+
+#create-muesli .flex #mixed-bowel #nuts {
+  z-index: 4;
+}
+
+#create-muesli .formular {
+  border-radius: 3px;
+  padding-top: 3rem;
+}
+
+#create-muesli .formular .card {
+  background-color: #DB1434;
+  border: #1D1D1D 3px solid;
+}
+
+#create-muesli .formular .card span {
+  text-decoration: underline;
+  font-family: 'futuraBold';
+  margin-bottom: .5rem;
+  text-transform: capitalize;
+}
+
+#create-muesli .formular .center {
+  text-align: center;
+}
+
+#create-muesli .formular .center span {
+  font-size: 0.7rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+#create-muesli .formular .center span.hide {
+  display: none;
+  opacity: 0;
+}
+
+#create-muesli .formular .center .btn {
+  background-color: #ffffff;
+  color: lightgray;
+  margin-top: 1rem;
+  width: 80%;
+  padding: 6px 25px;
+  font-size: 1rem;
+  font-family: 'futuraBold';
+  border-radius: 30px;
+  line-height: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: default;
+}
+
+@media (max-width: 991.98px) {
+  #create-muesli .formular .center .btn {
+    font-size: 0.8em;
+  }
+}
+
+#create-muesli .formular .center .cereal-btn {
+  background-color: #DB1434;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#create-muesli .formular .center .cereal-btn:hover {
+  background-color: #ffffff;
+  color: #1D1D1D;
+  -webkit-box-shadow: 10px 10px 10px #1D1D1D;
+          box-shadow: 10px 10px 10px #1D1D1D;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#create-muesli .formular .center .cereal-btn:active {
+  background-color: #6db3b4;
+  color: #ffffff;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+#create-muesli .formular .form-check {
+  margin-bottom: 2rem;
+  padding: .5rem 0;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+#create-muesli .formular .form-check label {
+  font-family: 'futuraBold';
+  font-size: 1.25rem;
+}
+
+.choose-package {
+  margin: 100px 0;
+}
+
+.choose-package h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.choose-package h2 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.choose-package .packets {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.choose-package .formular {
+  margin-top: 3rem;
+  border-radius: 3px;
+  border: #1D1D1D 5px solid;
+  border-radius: 3px;
+  padding-bottom: 2rem;
+}
+
+.choose-package .formular .card {
+  background-color: #DB1434;
+  border: #1D1D1D 3px solid;
+}
+
+.choose-package .formular .card span {
+  text-decoration: underline;
+  font-family: 'futuraBold';
+  margin-bottom: .5rem;
+  text-transform: capitalize;
+}
+
+.choose-package .formular .center {
+  text-align: center;
+}
+
+.choose-package .formular .center span {
+  font-size: 0.7rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+.choose-package .formular .center span.hide {
+  display: none;
+  opacity: 0;
+}
+
+.choose-package .formular .center .btn {
+  background-color: #ffffff;
+  color: lightgray;
+  margin-top: 1rem;
+  width: 80%;
+  padding: 6px 25px;
+  font-size: 1rem;
+  font-family: 'futuraBold';
+  border-radius: 30px;
+  line-height: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: default;
+}
+
+@media (max-width: 991.98px) {
+  .choose-package .formular .center .btn {
+    font-size: 0.8em;
+  }
+}
+
+.choose-package .formular .center .cereal-btn {
+  background-color: #DB1434;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.choose-package .formular .center .cereal-btn:hover {
+  background-color: #ffffff;
+  color: #1D1D1D;
+  -webkit-box-shadow: 10px 10px 10px #1D1D1D;
+          box-shadow: 10px 10px 10px #1D1D1D;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.choose-package .formular .center .cereal-btn:active {
+  background-color: #6db3b4;
+  color: #ffffff;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+.choose-package .formular .form-check {
+  padding: 2rem 0;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.choose-package .formular .form-check label {
+  font-family: 'futuraBold';
+  font-size: 1.25rem;
+}
+
+.concept {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.concept h1 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.concept h2 {
+  font-size: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.concept img {
+  width: 30%;
+  height: auto;
+}
+
+.contact {
+  margin: 100px 0;
+}
+
+.contact h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.contact h3 {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  font-family: 'futuraBold';
+}
+
+.contact .descr a {
+  font-family: 'futuraBold';
+  color: #1D1D1D;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.contact .descr a:hover {
+  text-decoration: none;
+  color: #DB1434;
+}
+
+.contact .descr a i {
+  color: #1D1D1D;
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.contact .descr a i:hover {
+  color: #DB1434;
+}
+
+.contact .map iframe {
+  width: 90%;
+  height: 500px;
+}
+/*# sourceMappingURL=styles.css.map */
